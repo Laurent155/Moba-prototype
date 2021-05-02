@@ -1,19 +1,21 @@
 Charater:
-will import an already-built rpg character from Unity store.
+Import an already-built rpg character from Unity store.
 need the following attributes for now:
-		hp, atk, ap, armor, magicResist, moveSpeed, range
-	Navigation:
-			will use navmesh
-	Interaction with turrets and minions:
-			can damage them within a certain range
+		- hp, atk, ap, armor, magicResist, moveSpeed, range
+	- Navigation:
+			- will use navmesh
+	- Interaction with turrets and minions:
+			- can damage them within a certain range
 
 Environment:
 will use a simple plane to begin with, adding turrets and terrains such as walls
-	turrets:
-		will see if I could get something from the store for free, otherwise a simple cube with a red cube on top will do
-		turrets will have the detection method running every frame, to determine whether it shoots.
-			prioritize minions over champions, with a condition to trigger aggro from champions
-		turret shots will be done using thr particle system.
+	- turrets:
+		- will see if I could get something from the store for free, otherwise a simple cube with a red cube on top will do
+		- turrets will have the detection method running every frame, to determine whether it shoots.
+			 - the detection method will be done using collider triggers (isTrigger).
+			 - prioritize minions over champions, with a condition to trigger aggro from champions
+		- turret shots will be done using thr particle system.
+
 Minions:
 will use simple cubes to represent them, and their attacks will be done using the particle system.
 they will start spawning at a particular time and then spawn periodically.
