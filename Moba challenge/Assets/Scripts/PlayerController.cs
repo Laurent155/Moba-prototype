@@ -22,10 +22,9 @@ public class PlayerController : MonoBehaviour
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
-            // {
-            //     Debug.Log("The ray hit at: " + hit1.point);
-            // }
             {
+                // Debug.Log("The ray hit at: " + hit.point);
+            
                 agent.SetDestination(hit.point);
             }
         }
